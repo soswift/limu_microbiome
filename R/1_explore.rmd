@@ -1,0 +1,284 @@
+---
+title: "Limu-JP5-Poop 16S Library Exploration"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    smooth_scroll: true 
+    fig_height: 5
+    fig_width: 7
+    code_folding: hide  
+date: '`r Sys.Date()`'
+---
+
+# Overview
+
+Purpose: Broad strokes exploration of the 16S library ASV data
+
+Projects:
+- Ocean Era Limu Microbiome - samples collected by Sean/Craig/Nic on Big Island in Nov 2022
+- Coral Samples - Shannon/Wesley Porites and Montipora
+- JP-5 Waimano Groundwater spike - Pilot project run in early 2023
+- Poop - Nic's septic/cesspool pilot samples taken in late 2022
+
+Sample Types:
+- Limu Tissue Samples - amplified with chloroplast blockers (pPNA)
+- Limu Water 0.2 µm Filters - from aquaculture tanks and source waters (e.g. fish effluent, deep sea water, surface water)
+
+- Coral Tissue - some with mitochondrial blockers (mPNA) some not
+
+- JP5 Water µm Filters - from bottles that were either natural ground water or spiked with jet fuel
+
+- Poop Water µm Filters - from cesspools/septic systems
+
+
+```{r}
+library(data.table)
+library(DT)
+library(vegan)
+library(ggplot2)
+
+theme_set(theme_minimal())
+options(
+  ggplot2.discrete.colour = c(
+    '#e6194b',
+    '#3cb44b',
+    '#ffe119',
+    '#4363d8',
+    '#f58231',
+    '#911eb4',
+    '#46f0f0',
+    '#f032e6',
+    '#bcf60c',
+    '#fabebe',
+    '#008080',
+    '#e6beff',
+    '#9a6324',
+    '#fffac8',
+    '#800000',
+    '#aaffc3',
+    '#808000',
+    '#ffd8b1',
+    '#000075',
+    '#808080',
+    '#ffffff',
+    '#000000'
+  )
+)
+```
+
+
+```{r}
+# file locations
+sample_file = "../data/sample/Sample_Key_OceanEraLimu-Poop-JP5.csv"
+otu_file= "../data/sequencing/16S/16S-pipeline_outputs/Results/main/details/abundance_table_100.shared"
+tax_file = "../data/sequencing/16S/16S-pipeline_outputs/Results/main/details/annotations_100.taxonomy"
+unifrac_file = "../data/sequencing/16S/16S-pipeline_outputs/Results/postprocessing/unifrac/unifrac_weighted_100.csv"
+
+# read
+sample_sheet = fread(sample_file)
+all_otu = fread(otu_file, drop = c("label", "numOtus"))
+raw_tax = fread(tax_file) 
+unifrac = read.csv(unifrac_file)
+
+# clean sample names
+sample_sheet[ , seqID := paste0("16S_", sample_number)] 
+
+datatable(sample_sheet[ ,.(seqID,
+                           sampleID,
+                           genus,
+                           nutrient_source,
+                           experiment,
+                           type,
+                           description,
+                           project,
+                           contact)],
+          options = list(pageLength = 10))
+
+
+
+```
+
+
+```{r}
+# clean taxonomy
+# data.table can 'read' the column as a semicolon separated file
+tax = fread(text = raw_tax$Taxonomy,
+            sep = ";")
+
+# fix the names
+names(tax) = c(
+  "kingdom",
+  "phylum",
+  "class",
+  "order",
+  "family",
+  "genus",
+  "species"
+)
+
+# drop the species column because it looks messy
+tax[ , species := NULL]
+
+# add the OTU identifier back into the taxonomy table (everything should still be in the same order)
+tax[ , OTU := raw_tax$OTU]
+
+
+# clean unifract
+row.names(unifrac) = unifrac$X
+unifrac = unifrac[ , colnames(unifrac) != "X"]
+colnames(unifrac) = gsub("X(.+)",
+                         "\\1",
+                         colnames(unifrac))
+unifrac= as.matrix(unifrac)
+
+
+```
+
+## Plots
+
+Make some ordinations, heatmaps, etc.
+
+
+```{r}
+# ordination function
+ord_samples = function(samps){
+  samps = samps[samps %in% rownames(unifrac)]
+  dist_mat = unifrac[samps,samps]
+  ord = metaMDS(comm = as.dist(dist_mat))
+  out = list(points = as.data.table(ord$points, keep.rownames = "seqID"),
+             stress = round(ord$stress, 3))
+  return(out) 
+}
+
+
+plot_ord = function(ord_out, p_title= NULL, color_var = NULL, shape_var = NULL){
+ points = ord_out$points
+ ord_meta = merge(points, sample_sheet, by = "seqID")
+  
+ ggplot(ord_meta, aes_string(x = "MDS1",
+                             y = "MDS2",
+                             color = color_var,
+                             shape = shape_var))+
+   geom_point(size = 3)+
+   labs(title = p_title, 
+        caption = paste("Stress =", ord_out$stress))
+}
+```
+
+
+### By Project
+
+```{r}
+all_ord = ord_samples(sample_sheet[ , seqID])
+
+plot_ord(all_ord,
+         p_title = "All Samples - Unifrac",
+         color_var = "project",
+         shape_var = "type")
+         
+
+```
+
+
+```{r}
+
+limu_ord = ord_samples(sample_sheet[ project == "Ocean Era Nov22" , seqID])
+
+plot_ord(limu_ord,
+         p_title = "All Samples - Unifrac",
+         color_var = "genus",
+         shape_var = "type")
+         
+
+    
+plot_ord(limu_ord,
+         p_title = "All Samples - Unifrac",
+         color_var = "nutrient_source",
+         shape_var = "type")
+              
+
+
+
+```
+### Water Samples
+
+```{r}
+limu_ord = ord_samples(sample_sheet[ type == "filter" , seqID])
+
+plot_ord(limu_ord,
+         p_title = "Water Samples - Unifrac",
+         color_var = "genus",
+         shape_var = "nutrient_source")
+         
+```
+### Limu Samples
+
+```{r}
+limu_ord = ord_samples(sample_sheet[ type == "limu" , seqID])
+
+plot_ord(limu_ord,
+         p_title = "Limu Samples - Unifrac",
+         color_var = "genus",
+         shape_var = "nutrient_source")
+         
+```
+
+## Heatmaps
+
+
+```{r}
+# function to sum by family
+sum_by_tax = function(otus,
+                      tax_table,
+                      tax_level = "family",
+                      cutoff = 40){
+  
+  otu_key = merge(otus,
+                    tax_table[, .SD, .SDcols = c(tax_level, "OTU")],
+                    by = "OTU",
+                    all.x = T)
+  otu_key[, OTU := NULL]
+  
+  # sum by tax level
+  otu_sum = otu_key[, lapply(.SD, sum), by = tax_level]
+
+  # order by most abundant taxa
+  otu_sum[ , tax_sums := rowSums(otu_sum[ , .SD, .SDcols = !tax_level])]
+  otu_sum = otu_sum[tax_sums > 0]
+  otu_sum = otu_sum[order(tax_sums, decreasing = T)]
+  otu_sum[ , tax_sums := NULL]
+  
+  return(otu_sum)
+}
+
+
+
+# function to generate heatmap
+make_heatmap = function(otu_dt,
+                        id_col,
+                        col_labs,
+                        row_labs = NULL,
+                        scale_vals = F,
+                        min_sam = 2){
+  
+ # transform to matrix
+ otu_mat = as.matrix(otu_dt[ , .SD, .SDcols = !id_col])
+ otu_mat = otu_mat[rowSums(otu_mat) > 0,]
+ 
+ # count taxon occurrence 
+ keep_tax = apply(otu_mat, 1, function(x) length(x[x>0]) > min_sam)
+ otu_mat = otu_mat[keep_tax,]
+ row_labs = row_labs[keep_tax]
+ 
+ if(isTRUE(scale_vals)){
+   otu_mat = t(scale(t(otu_mat)))
+ }
+ 
+ Heatmap(matrix = otu_mat,
+         column_labels = col_labs,
+         row_labels = row_labs)
+}
+```
+

@@ -1,0 +1,16 @@
+Experiments,Notes,Simona's Code,Acronym,Nutrient Source/Ratio,Species,Treatments,"replicates (Tanks - Makai=1, Mauka=3)",Coding,Coding Examples
+Pulsed Flume,Need to calculate the residence times and get flow rates from Simona,O-T13,PF,DSW Pulsed 2.5% 12h Night,Caulerpa,"Flow: Low, Medium, High","2 tanks per treatment, 2 clumps per tank",PF_Treatment_Tank_Clump or Water,"PF_M_T#_C#, PF_H_T#_WA"
+Stocking Density,,C-T5,SD,DSW 20%,"Aghardiella, Halymenia",Species,"2 tanks per species, 3 clumps per tank",SD_Species_Tank_Clump or Water,"SD_A_T#_C#, SD_A_T#_WA"
+Ulva Trough,,none,UT,DSW 10%,Ulva,none,3 clumps,UT_Clump or Water,UT_C#
+Caulerpa Trough,Different Effluent,none,CT,Fish Effluent 100%,Caulerpa,none,"2 tanks, 3 clumps per tank",CT_Tank_Clump or Water,"CT_T#_C#, CT_T#_WA"
+Effluent Commercialization,Same Effluent as GE,none,EC,Fish Effluent 80%,"Caulerpa, Halymenia",Species,"2 tanks, 3 clumps per tank",EC_Species_Tank_Clump or Water,"EC_H_T#_C#, EC_C_T#_C#"
+Gracilaria Effluent,Same Effluent as EC,N-T51,GE,Fish Effluent variable,Gracilaria,"100, 80, 60, 45%","3 tanks, 1 clump per tank",GE_Treatment_Tank_Clump or Water,"GE_100_T#_C1, GE_080_T#_WA"
+Grateloupia,Possibly same as GE/EC,none,GR,Fish Effluent 80%,Grateloupia,none,"1 tank, 3 clumps per tank",GR_Clump or Water,GR_C#
+Ulva Blue,,none,UB,DSW 10%,Ulva,none,"1 tank, 3 clumps per tank",UB_Clump or Water,UB_C#
+Halymenia Blue,,none,HB,DSW 10%,Halymenia,none,"1 tank, 3 clumps per tank",HB_Clump or Water,HB_C#
+Sump Water,,none,SW,Mixed,none,none,5 Sumps,SW,SW#
+SSW,,,SSW,,,,3,,
+DSW,,,DSW,,,,3,,
+Effluent,,,ESW,,,,3,,
+Groundwater,,,SGD,,,,3,,
+Random Lab Ulvas,,,written names,,Ulva,,,,
