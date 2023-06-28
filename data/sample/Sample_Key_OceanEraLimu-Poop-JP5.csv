@@ -1,155 +1,155 @@
-sample_number,sampleID,genus,nutrient_source,nutrient_percent,treatment,tank,experiment,type,description,notes,project,contact
-150,10_26_22_septic_1_75_ml,NA,NA,NA,NA,NA,NA,filter,Nic poop samples,,Poop,Nic
-153,10_26_22_Septic_2_150ml,NA,NA,NA,NA,NA,NA,filter,Nic poop samples,,Poop,Nic
-151,11_22_22_leech_1_140_ml,NA,NA,NA,NA,NA,NA,filter,Nic poop samples,,Poop,Nic
-152,11_22_22_Leech_2_55_ml,NA,NA,NA,NA,NA,NA,filter,Nic poop samples,,Poop,Nic
-149,11_22_22_raw_1_25_ml,NA,NA,NA,NA,NA,NA,filter,Nic poop samples,,Poop,Nic
-154,11_22_22_raw_2_25ml,NA,NA,NA,NA,NA,NA,filter,Nic poop samples,,Poop,Nic
-148,12_19_22_sand_island_raw_65_ml,NA,NA,NA,NA,NA,NA,filter,Nic poop samples,,Poop,Nic
-49,C1_CAUL_11_29_22,Caulerpa,Cage Effluent,100,0 m,NA,Fish Cages,limu,Limu from fish cage at various distances,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-80,C2_C,Caulerpa,Cage Effluent,100,0.5 m,NA,Fish Cages,limu,Limu from fish cage at various distances,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-79,C3_B,Bryopsis,Cage Effluent,100,10 m,NA,Fish Cages,limu,Limu from fish cage at various distances,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-82,C3_D,Dasya,Cage Effluent,100,10 m,NA,Fish Cages,limu,Limu from fish cage at various distances,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-78,C4_C,Caulerpa,Cage Effluent,100,5 m,NA,Fish Cages,limu,Limu from fish cage at various distances,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-77,C5_C,Caulerpa,Cage Effluent,100,15 m,NA,Fish Cages,limu,Limu from fish cage at various distances,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-81,C6_C,Caulerpa,Cage Effluent,100,40 m,NA,Fish Cages,limu,Limu from fish cage at various distances,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-65,CT_T1_C1,Caulerpa,Fish Effluent,100,NA,Tank 1,Caulerpa Trough,limu,Caulerpa grown in flow through trough,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-63,CT_T1_C2,Caulerpa,Fish Effluent,100,NA,Tank 1,Caulerpa Trough,limu,Caulerpa grown in flow through trough,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-66,CT_T1_C3,Caulerpa,Fish Effluent,100,NA,Tank 1,Caulerpa Trough,limu,Caulerpa grown in flow through trough,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-115,CT_T1_WA,Caulerpa water,Fish Effluent,100,NA,Tank 1,Caulerpa Trough,filter,Caulerpa grown in flow through trough,Nov sampling water,Ocean Era Nov22,Sean and Nic
-58,CT_T2_C1,Caulerpa,Fish Effluent,100,NA,Tank 2,Caulerpa Trough,limu,Caulerpa grown in flow through trough,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-74,CT_T2_C2,Caulerpa,Fish Effluent,100,NA,Tank 2,Caulerpa Trough,limu,Caulerpa grown in flow through trough,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-51,CT_T2_C3,Caulerpa,Fish Effluent,100,NA,Tank 2,Caulerpa Trough,limu,Caulerpa grown in flow through trough,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-117,CT_T2_WA,Caulerpa water,Fish Effluent,100,NA,Tank 2,Caulerpa Trough,filter,Caulerpa grown in flow through trough,Nov sampling water,Ocean Era Nov22,Sean and Nic
-133,DSW1_SD,NA,Deep Sea Water,100,NA,NA,Source Water,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
-124,DSW2,NA,Deep Sea Water,100,NA,NA,Source Water,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
-83,E1_ULVA,Ulva,NA,NA,NA,NA,NA,limu,Samples from freezer,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-99,E2_ULVA,Ulva,NA,NA,NA,NA,NA,limu,Samples from freezer,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-98,E3_CAULERPA,Caulerpa,NA,NA,NA,NA,NA,limu,Samples from freezer,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-85,E4_HALYM,Halymenia,NA,NA,NA,NA,NA,limu,Samples from freezer,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-97,E6_CAULERPA,Caulerpa,NA,NA,NA,NA,NA,limu,Samples from freezer,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-28,EC_C_T1_C1,Caulerpa,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-36,EC_C_T1_C2,Caulerpa,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-52,EC_C_T1_C3,Caulerpa,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-118,EC_C_T1_WA,Caulerpa water,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,filter,Limu grown on fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-75,EC_C_T2_C1,Caulerpa,Fish Effluent,80,NA,Tank 2,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-12,EC_C_T2_C2,Caulerpa,Fish Effluent,80,NA,Tank 2,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-59,EC_C_T2_C5,Caulerpa,Fish Effluent,80,NA,Tank 2,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-139,EC_C_T2_WA,Caulerpa water,Fish Effluent,80,NA,Tank 2,Effluent Commercialization,filter,Limu grown on fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-6,EC_C_T3_C1,Caulerpa,Fish Effluent,80,NA,Tank 3,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-44,EC_C_T3_C2,Caulerpa,Fish Effluent,80,NA,Tank 3,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-20,EC_C_T3_C3,Caulerpa,Fish Effluent,80,NA,Tank 3,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-108,EC_C_T3_WA,Caulerpa water,Fish Effluent,80,NA,Tank 3,Effluent Commercialization,filter,Limu grown on fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-64,EC_H_T1_C1,Halymenia,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-67,EC_H_T1_C2,Halymenia,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-14,EC_H_T1_C3,Halymenia,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-122,EC_H_T1_WA,Halymenia water,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,filter,Limu grown on fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-104,ESW1_CAUL,Caulerpa water,Effluent Source Water,100,NA,NA,Source Water,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
-134,ESW2_GRAC_NENUE,Gracilaria water,Effluent Source Water,100,NA,NA,Source Water,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
-100,ESW3_HALY_KANPACHI,Halymenia water,Effluent Source Water,100,NA,NA,Source Water,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
-23,GE_040_T1_C1,Gracilaria,Fish Effluent,45,NA,Tank 1,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-121,GE_045_T1_WA,Gracilaria water,Fish Effluent,45,NA,Tank 1,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-31,GE_045_T2_C1,Gracilaria,Fish Effluent,45,NA,Tank 2,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-119,GE_045_T2_WA,Gracilaria water,Fish Effluent,45,NA,Tank 2,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-17,GE_045_T3_C1,Gracilaria,Fish Effluent,45,NA,Tank 3,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-138,GE_045_T3_WA,Gracilaria water,Fish Effluent,45,NA,Tank 3,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-26,GE_060_T1_C1,Gracilaria,Fish Effluent,60,NA,Tank 1,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-129,GE_060_T1_WA,Gracilaria water,Fish Effluent,60,NA,Tank 1,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-9,GE_060_T2_C1,Gracilaria,Fish Effluent,60,NA,Tank 2,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-113,GE_060_T2_WA,Gracilaria water,Fish Effluent,60,NA,Tank 2,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-47,GE_060_T3_C1,Gracilaria,Fish Effluent,60,NA,Tank 3,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-126,GE_060_T3_WA,Gracilaria water,Fish Effluent,60,NA,Tank 3,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-33,GE_080_T1_C1,Gracilaria,Fish Effluent,80,NA,Tank 1,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-116,GE_080_T1_WA,Gracilaria water,Fish Effluent,80,NA,Tank 1,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-3,GE_080_T2_C1,Gracilaria,Fish Effluent,80,NA,Tank 2,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-135,GE_080_T2_WA,Gracilaria water,Fish Effluent,80,NA,Tank 2,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-62,GE_080_T3_C1,Gracilaria,Fish Effluent,80,NA,Tank 3,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-130,GE_080_T3_WA,Gracilaria water,Fish Effluent,80,NA,Tank 3,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-39,GE_100_T1_C1,Gracilaria,Fish Effluent,100,NA,Tank 1,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-127,GE_100_T1_WA,Gracilaria water,Fish Effluent,100,NA,Tank 1,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-70,GE_100_T2_C1,Gracilaria,Fish Effluent,100,NA,Tank 2,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-106,GE_100_T2_W,Gracilaria water,Fish Effluent,100,NA,Tank 2,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-55,GE_100_T3_C1,Gracilaria,Fish Effluent,100,NA,Tank 3,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-128,GE_100_T3_WA,Gracilaria water,Fish Effluent,100,NA,Tank 3,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-4,GR_C1,Grateloupia,Fish Effluent,80,NA,Tank 1,Grateloupia Effluent,limu,Grateloupia grown with fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-56,GR_C2,Grateloupia,Fish Effluent,80,NA,Tank 1,Grateloupia Effluent,limu,Grateloupia grown with fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-41,GR_C3,Grateloupia,Fish Effluent,80,NA,Tank 1,Grateloupia Effluent,limu,Grateloupia grown with fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-125,GR_WA,Grateloupia,Fish Effluent,80,NA,Tank 1,Grateloupia Effluent,filter,Grateloupia grown with fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
-27,HB_C1,Halymenia,Deep Sea Water,10,NA,Tank 1,Halymenia Blue,limu,Halymenia grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-35,HB_C2,Halymenia,Deep Sea Water,10,NA,Tank 1,Halymenia Blue,limu,Halymenia grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-43,HB_C3,Halymenia,Deep Sea Water,10,NA,Tank 1,Halymenia Blue,limu,Halymenia grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-120,HB_W,Halymenia,Deep Sea Water,10,NA,Tank 1,Halymenia Blue,filter,Halymenia grown with deep sea water,Nov sampling water,Ocean Era Nov22,Sean and Nic
-140,j005,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,sample t0,JP5 spike,Sean and Nic
-141,j007,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,control t0,JP5 spike,Sean and Nic
-142,j017,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,sample t1,JP5 spike,Sean and Nic
-143,j019,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,control t1,JP5 spike,Sean and Nic
-144,j045,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,sample t2,JP5 spike,Sean and Nic
-145,j047,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,control t2,JP5 spike,Sean and Nic
-146,j065,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,sample t3,JP5 spike,Sean and Nic
-147,j067,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,control t4,JP5 spike,Sean
-38,PF_H_T1_C1,Caulerpa,Deep Sea Water,2.5,High Flow,Tank 1,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-13,PF_H_T1_C2,Caulerpa,Deep Sea Water,2.5,High Flow,Tank 1,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-105,PF_H_T1_WA,Caulerpa,Deep Sea Water,2.5,High Flow,Tank 1,12hr Pulsed Flume,filter,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling water,Ocean Era Nov22,Sean and Nic
-61,PF_H_T2_C1,Caulerpa,Deep Sea Water,2.5,High Flow,Tank 2,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-69,PF_H_T2_C2,Caulerpa,Deep Sea Water,2.5,High Flow,Tank 2,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-103,PF_H_T2_WA,Caulerpa water,Deep Sea Water,2.5,High Flow,Tank 2,12hr Pulsed Flume,filter,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling water,Ocean Era Nov22,Sean and Nic
-30,PF_L_T1_C1,Caulerpa,Deep Sea Water,2.5,Low Flow,Tank 1,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-54,PF_L_T1_C2,Caulerpa,Deep Sea Water,2.5,Low Flow,Tank 1,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-123,PF_L_T1_WA,Caulerpa,Deep Sea Water,2.5,Low Flow,Tank 1,12hr Pulsed Flume,filter,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling water,Ocean Era Nov22,Sean and Nic
-1,PF_L_T2_C1,Caulerpa,Deep Sea Water,2.5,Low Flow,Tank 2,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-8,PF_L_T2_C2,Caulerpa,Deep Sea Water,2.5,Low Flow,Tank 2,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-107,PF_L_T2_WA,Caulerpa,Deep Sea Water,2.5,Low Flow,Tank 2,12hr Pulsed Flume,filter,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling water,Ocean Era Nov22,Sean and Nic
-73,PF_M_T1_C1,Caulerpa,Deep Sea Water,2.5,Medium Flow,Tank 1,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-16,PF_M_T1_C2,Caulerpa,Deep Sea Water,2.5,Medium Flow,Tank 1,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-136,PF_M_T1_WA,Caulerpa,Deep Sea Water,2.5,Medium Flow,Tank 1,12hr Pulsed Flume,filter,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling water,Ocean Era Nov22,Sean and Nic
-46,PF_M_T2_C1,Caulerpa,Deep Sea Water,2.5,Medium Flow,Tank 2,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-22,PF_M_T2_C2,Caulerpa,Deep Sea Water,2.5,Medium Flow,Tank 2,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-111,PF_M_T2_WA,Caulerpa,Deep Sea Water,2.5,Medium Flow,Tank 2,12hr Pulsed Flume,filter,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling water,Ocean Era Nov22,Sean and Nic
-84,S1_ULVA,Ulva,NA,NA,NA,NA,NA,limu,Samples from freezer at ocean era,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-93,S2_ULVA,Ulva,NA,NA,NA,NA,NA,limu,Samples from freezer at ocean era,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-95,S3_HALYM,Halymenia,NA,NA,NA,NA,NA,limu,Samples from freezer at ocean era,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-96,S5_CAULERPA,Caulerpa,NA,NA,NA,NA,NA,limu,Samples from freezer at ocean era,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-87,S6_HALYM,Halymenia,NA,NA,NA,NA,NA,limu,Samples from freezer at ocean era,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-53,SD_A_T1_C1,Aghardiella,Deep Sea Water,20,NA,Tank 1,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-34,SD_A_T1_C2,Aghardiella,Deep Sea Water,20,NA,Tank 1,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-21,SD_A_T1_C3,Aghardiella,Deep Sea Water,20,NA,Tank 1,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-132,SD_A_T1_WA,Aghardiella water,Deep Sea Water,20,NA,Tank 1,Stocking Density,filter,Aghardiella grown with deep sea water,Nov sampling water,Ocean Era Nov22,Sean and Nic
-45,SD_A_T2_C1,Aghardiella,Deep Sea Water,20,NA,Tank 2,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-5,SD_A_T2_C2,Aghardiella,Deep Sea Water,20,NA,Tank 2,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-60,SD_A_T2_C3,Aghardiella,Deep Sea Water,20,NA,Tank 2,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-109,SD_A_T2_WA,Aghardiella water,Deep Sea Water,20,NA,Tank 2,Stocking Density,filter,Aghardiella grown with deep sea water,Nov sampling water,Ocean Era Nov22,Sean and Nic
-76,SD_H_T1_C1,Halymenia,Deep Sea Water,20,NA,Tank 1,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-68,SD_H_T1_C2,Halymenia,Deep Sea Water,20,NA,Tank 1,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-15,SD_H_T1_C3,Halymenia,Deep Sea Water,20,NA,Tank 1,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-137,SD_H_T1_WA,Halymenia water,Deep Sea Water,20,NA,Tank 1,Stocking Density,filter,Aghardiella grown with deep sea water,Nov sampling water,Ocean Era Nov22,Sean and Nic
-37,SD_H_T2_4,Halymenia,Deep Sea Water,20,NA,Tank 2,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-29,SD_H_T2_C2,Halymenia,Deep Sea Water,20,NA,Tank 2,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-7,SD_H_T2_C3,Halymenia,Deep Sea Water,20,NA,Tank 2,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-102,SD_H_T2_WA,Halymenia water,Deep Sea Water,20,NA,Tank 2,Stocking Density,filter,Aghardiella grown with deep sea water,Nov sampling water,Ocean Era Nov22,Sean and Nic
-94,SE1_ULVA,Ulva,NA,NA,NA,NA,NA,limu,Samples from freezer at Ocean Era,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-90,SE2_HALYM,Halymenia,NA,NA,NA,NA,NA,limu,Samples from freezer at Ocean Era,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-92,SE3_CAUL,Caulerpa,NA,NA,NA,NA,NA,limu,Samples from freezer at Ocean Era,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-88,SE4_CAUL,Caulerpa,NA,NA,NA,NA,NA,limu,Samples from freezer at Ocean Era,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-86,SE5_CAULERPA,Caulerpa,NA,NA,NA,NA,NA,limu,Samples from freezer at Ocean Era,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-91,SE5_HALYM,Halymenia,NA,NA,NA,NA,NA,limu,Samples from freezer at Ocean Era,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-89,SE6_HALYM,Halymenia,NA,NA,NA,NA,NA,limu,Samples from freezer at Ocean Era,Collected by Ocean Era,Ocean Era Nov22,Sean and Nic
-131,SSW1_SD,Source water,Surface Sea Water,NA,NA,NA,Stocking Density,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
-112,SSW2,NA,Surface Sea Water,NA,NA,NA,Source Water,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
-110,SSW3_EC,Source water,Surface Sea Water,NA,NA,NA,Effluent Commercialization,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
-50,UB_C1,Ulva,Deep Sea Water,10,NA,Tank 1,Ulva Blue,limu,Ulva grownt with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-42,UB_C2,Ulva,Deep Sea Water,10,NA,Tank 1,Ulva Blue,limu,Ulva grownt with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-57,UB_C3,Ulva,Deep Sea Water,10,NA,Tank 1,Ulva Blue,limu,Ulva grownt with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-101,UB_W,Ulva water,Deep Sea Water,10,NA,Tank 1,Ulva Blue,filter,Ulva grownt with deep sea water,Nov sampling water,Ocean Era Nov22,Sean and Nic
-24,UL_12WILD_SSW_10MLF12_1,Ulva,NA,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-18,UL_12WILD_SSW1_10ML_F12_3,Ulva,NA,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-2,UL_12wild_sswk10ml3_2,Ulva,NA,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-32,UL_wild_pool_1,Ulva,NA,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-48,UL_WILD_POOS_3,Ulva,NA,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-72,UL_WILDPOOL_2,Ulva,NA,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-10,UO_VNN_SSW_F2A_1,Ulva,NA,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-71,UO_VON_1_SSW_F2A_3,Ulva,NA,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-40,UO_VON1_SJW_F2A_2,Ulva,NA,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
-25,UT_C1,Ulva,Deep Sea Water,10,NA,NA,Ulva Trough,limu,Ulva grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-11,UT_C2,Ulva,Deep Sea Water,10,NA,NA,Ulva Trough,limu,Ulva grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-19,UT_C3,Ulva,Deep Sea Water,10,NA,NA,Ulva Trough,limu,Ulva grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
-114,UT_WA,Ulva water,Deep Sea Water,10,NA,NA,Ulva Trough,filter,Ulva grown with deep sea water,Nov sampling water,Ocean Era Nov22,Sean and Nic
+sample_number,sampleID,genus,phylum,nutrient_source,nutrient_percent,treatment,tank,experiment,type,description,notes,project,contact
+150,10_26_22_septic_1_75_ml,NA,NA,NA,NA,NA,NA,NA,filter,Nic poop samples,,Poop,Nic
+153,10_26_22_Septic_2_150ml,NA,NA,NA,NA,NA,NA,NA,filter,Nic poop samples,,Poop,Nic
+151,11_22_22_leech_1_140_ml,NA,NA,NA,NA,NA,NA,NA,filter,Nic poop samples,,Poop,Nic
+152,11_22_22_Leech_2_55_ml,NA,NA,NA,NA,NA,NA,NA,filter,Nic poop samples,,Poop,Nic
+149,11_22_22_raw_1_25_ml,NA,NA,NA,NA,NA,NA,NA,filter,Nic poop samples,,Poop,Nic
+154,11_22_22_raw_2_25ml,NA,NA,NA,NA,NA,NA,NA,filter,Nic poop samples,,Poop,Nic
+148,12_19_22_sand_island_raw_65_ml,NA,NA,NA,NA,NA,NA,NA,filter,Nic poop samples,,Poop,Nic
+49,C1_CAUL_11_29_22,Caulerpa,Green,Cage Effluent,100,0 m,NA,Fish Cages,limu,Limu from fish cage at various distances,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+80,C2_C,Caulerpa,Green,Cage Effluent,100,0.5 m,NA,Fish Cages,limu,Limu from fish cage at various distances,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+79,C3_B,Bryopsis,Green,Cage Effluent,100,10 m,NA,Fish Cages,limu,Limu from fish cage at various distances,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+82,C3_D,Dasya,Red,Cage Effluent,100,10 m,NA,Fish Cages,limu,Limu from fish cage at various distances,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+78,C4_C,Caulerpa,Green,Cage Effluent,100,5 m,NA,Fish Cages,limu,Limu from fish cage at various distances,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+77,C5_C,Caulerpa,Green,Cage Effluent,100,15 m,NA,Fish Cages,limu,Limu from fish cage at various distances,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+81,C6_C,Caulerpa,Green,Cage Effluent,100,40 m,NA,Fish Cages,limu,Limu from fish cage at various distances,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+65,CT_T1_C1,Caulerpa,Green,Fish Effluent,100,NA,Tank 1,Caulerpa Trough,limu,Caulerpa grown in flow through trough,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+63,CT_T1_C2,Caulerpa,Green,Fish Effluent,100,NA,Tank 1,Caulerpa Trough,limu,Caulerpa grown in flow through trough,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+66,CT_T1_C3,Caulerpa,Green,Fish Effluent,100,NA,Tank 1,Caulerpa Trough,limu,Caulerpa grown in flow through trough,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+115,CT_T1_WA,Caulerpa water,Green,Fish Effluent,100,NA,Tank 1,Caulerpa Trough,filter,Caulerpa grown in flow through trough,Nov sampling water,Ocean Era Nov22,Sean and Nic
+58,CT_T2_C1,Caulerpa,Green,Fish Effluent,100,NA,Tank 2,Caulerpa Trough,limu,Caulerpa grown in flow through trough,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+74,CT_T2_C2,Caulerpa,Green,Fish Effluent,100,NA,Tank 2,Caulerpa Trough,limu,Caulerpa grown in flow through trough,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+51,CT_T2_C3,Caulerpa,Green,Fish Effluent,100,NA,Tank 2,Caulerpa Trough,limu,Caulerpa grown in flow through trough,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+117,CT_T2_WA,Caulerpa water,Green,Fish Effluent,100,NA,Tank 2,Caulerpa Trough,filter,Caulerpa grown in flow through trough,Nov sampling water,Ocean Era Nov22,Sean and Nic
+133,DSW1_SD,NA,NA,Deep Sea Source Water,100,NA,NA,Source Water,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
+124,DSW2,NA,NA,Deep Sea Source Water,100,NA,NA,Source Water,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
+83,E1_ULVA,Ulva,Green,Unknown,NA,NA,NA,NA,limu,Samples from freezer,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+99,E2_ULVA,Ulva,Green,Unknown,NA,NA,NA,NA,limu,Samples from freezer,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+98,E3_CAULERPA,Caulerpa,Green,Unknown,NA,NA,NA,NA,limu,Samples from freezer,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+85,E4_HALYM,Halymenia,Red,Unknown,NA,NA,NA,NA,limu,Samples from freezer,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+97,E6_CAULERPA,Caulerpa,Green,Unknown,NA,NA,NA,NA,limu,Samples from freezer,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+28,EC_C_T1_C1,Caulerpa,Green,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+36,EC_C_T1_C2,Caulerpa,Green,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+52,EC_C_T1_C3,Caulerpa,Green,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+118,EC_C_T1_WA,Caulerpa water,Green,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,filter,Limu grown on fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+75,EC_C_T2_C1,Caulerpa,Green,Fish Effluent,80,NA,Tank 2,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+12,EC_C_T2_C2,Caulerpa,Green,Fish Effluent,80,NA,Tank 2,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+59,EC_C_T2_C5,Caulerpa,Green,Fish Effluent,80,NA,Tank 2,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+139,EC_C_T2_WA,Caulerpa water,Green,Fish Effluent,80,NA,Tank 2,Effluent Commercialization,filter,Limu grown on fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+6,EC_C_T3_C1,Caulerpa,Green,Fish Effluent,80,NA,Tank 3,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+44,EC_C_T3_C2,Caulerpa,Green,Fish Effluent,80,NA,Tank 3,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+20,EC_C_T3_C3,Caulerpa,Green,Fish Effluent,80,NA,Tank 3,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+108,EC_C_T3_WA,Caulerpa water,Green,Fish Effluent,80,NA,Tank 3,Effluent Commercialization,filter,Limu grown on fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+64,EC_H_T1_C1,Halymenia,Red,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+67,EC_H_T1_C2,Halymenia,Red,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+14,EC_H_T1_C3,Halymenia,Red,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,limu,Limu grown on fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+122,EC_H_T1_WA,Halymenia water,Red,Fish Effluent,80,NA,Tank 1,Effluent Commercialization,filter,Limu grown on fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+104,ESW1_CAUL,Caulerpa Fish source water,Green,Effluent Source Water,100,NA,NA,Effluent Commercialization,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
+134,ESW2_GRAC_NENUE,Gracilaria Nenue source water,Red,Effluent Source Water,100,NA,NA,Gracillaria Effluent,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
+100,ESW3_HALY_KANPACHI,Halymenia Kanpachi source water,Red,Effluent Source Water,100,NA,NA,Effluent Commercialization,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
+23,GE_040_T1_C1,Gracilaria,Red,Fish Effluent,45,NA,Tank 1,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+121,GE_045_T1_WA,Gracilaria water,Red,Fish Effluent,45,NA,Tank 1,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+31,GE_045_T2_C1,Gracilaria,Red,Fish Effluent,45,NA,Tank 2,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+119,GE_045_T2_WA,Gracilaria water,Red,Fish Effluent,45,NA,Tank 2,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+17,GE_045_T3_C1,Gracilaria,Red,Fish Effluent,45,NA,Tank 3,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+138,GE_045_T3_WA,Gracilaria water,Red,Fish Effluent,45,NA,Tank 3,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+26,GE_060_T1_C1,Gracilaria,Red,Fish Effluent,60,NA,Tank 1,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+129,GE_060_T1_WA,Gracilaria water,Red,Fish Effluent,60,NA,Tank 1,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+9,GE_060_T2_C1,Gracilaria,Red,Fish Effluent,60,NA,Tank 2,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+113,GE_060_T2_WA,Gracilaria water,Red,Fish Effluent,60,NA,Tank 2,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+47,GE_060_T3_C1,Gracilaria,Red,Fish Effluent,60,NA,Tank 3,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+126,GE_060_T3_WA,Gracilaria water,Red,Fish Effluent,60,NA,Tank 3,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+33,GE_080_T1_C1,Gracilaria,Red,Fish Effluent,80,NA,Tank 1,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+116,GE_080_T1_WA,Gracilaria water,Red,Fish Effluent,80,NA,Tank 1,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+3,GE_080_T2_C1,Gracilaria,Red,Fish Effluent,80,NA,Tank 2,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+135,GE_080_T2_WA,Gracilaria water,Red,Fish Effluent,80,NA,Tank 2,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+62,GE_080_T3_C1,Gracilaria,Red,Fish Effluent,80,NA,Tank 3,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+130,GE_080_T3_WA,Gracilaria water,Red,Fish Effluent,80,NA,Tank 3,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+39,GE_100_T1_C1,Gracilaria,Red,Fish Effluent,100,NA,Tank 1,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+127,GE_100_T1_WA,Gracilaria water,Red,Fish Effluent,100,NA,Tank 1,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+70,GE_100_T2_C1,Gracilaria,Red,Fish Effluent,100,NA,Tank 2,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+106,GE_100_T2_W,Gracilaria water,Red,Fish Effluent,100,NA,Tank 2,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+55,GE_100_T3_C1,Gracilaria,Red,Fish Effluent,100,NA,Tank 3,Gracillaria Effluent,limu,Gracillaria grown with different concentrations of fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+128,GE_100_T3_WA,Gracilaria water,Red,Fish Effluent,100,NA,Tank 3,Gracillaria Effluent,filter,Gracillaria grown with different concentrations of fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+4,GR_C1,Grateloupia,Red,Fish Effluent,80,NA,Tank 1,Grateloupia Effluent,limu,Grateloupia grown with fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+56,GR_C2,Grateloupia,Red,Fish Effluent,80,NA,Tank 1,Grateloupia Effluent,limu,Grateloupia grown with fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+41,GR_C3,Grateloupia,Red,Fish Effluent,80,NA,Tank 1,Grateloupia Effluent,limu,Grateloupia grown with fish effluent,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+125,GR_WA,Grateloupia,Red,Fish Effluent,80,NA,Tank 1,Grateloupia Effluent,filter,Grateloupia grown with fish effluent,Nov sampling water,Ocean Era Nov22,Sean and Nic
+27,HB_C1,Halymenia,Red,Deep Sea Water,10,NA,Tank 1,Halymenia Blue,limu,Halymenia grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+35,HB_C2,Halymenia,Red,Deep Sea Water,10,NA,Tank 1,Halymenia Blue,limu,Halymenia grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+43,HB_C3,Halymenia,Red,Deep Sea Water,10,NA,Tank 1,Halymenia Blue,limu,Halymenia grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+120,HB_W,Halymenia,Red,Deep Sea Water,10,NA,Tank 1,Halymenia Blue,filter,Halymenia grown with deep sea water,Nov sampling water,Ocean Era Nov22,Sean and Nic
+140,j005,NA,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,sample t0,JP5 spike,Sean and Nic
+141,j007,NA,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,control t0,JP5 spike,Sean and Nic
+142,j017,NA,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,sample t1,JP5 spike,Sean and Nic
+143,j019,NA,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,control t1,JP5 spike,Sean and Nic
+144,j045,NA,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,sample t2,JP5 spike,Sean and Nic
+145,j047,NA,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,control t2,JP5 spike,Sean and Nic
+146,j065,NA,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,sample t3,JP5 spike,Sean and Nic
+147,j067,NA,NA,NA,NA,NA,NA,NA,filter,JP5 spike into Waimano ground water,control t4,JP5 spike,Sean
+38,PF_H_T1_C1,Caulerpa,Green,Deep Sea Water,2.5,High Flow,Tank 1,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+13,PF_H_T1_C2,Caulerpa,Green,Deep Sea Water,2.5,High Flow,Tank 1,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+105,PF_H_T1_WA,Caulerpa,Green,Deep Sea Water,2.5,High Flow,Tank 1,12hr Pulsed Flume,filter,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling water,Ocean Era Nov22,Sean and Nic
+61,PF_H_T2_C1,Caulerpa,Green,Deep Sea Water,2.5,High Flow,Tank 2,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+69,PF_H_T2_C2,Caulerpa,Green,Deep Sea Water,2.5,High Flow,Tank 2,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+103,PF_H_T2_WA,Caulerpa water,Green,Deep Sea Water,2.5,High Flow,Tank 2,12hr Pulsed Flume,filter,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling water,Ocean Era Nov22,Sean and Nic
+30,PF_L_T1_C1,Caulerpa,Green,Deep Sea Water,2.5,Low Flow,Tank 1,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+54,PF_L_T1_C2,Caulerpa,Green,Deep Sea Water,2.5,Low Flow,Tank 1,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+123,PF_L_T1_WA,Caulerpa,Green,Deep Sea Water,2.5,Low Flow,Tank 1,12hr Pulsed Flume,filter,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling water,Ocean Era Nov22,Sean and Nic
+1,PF_L_T2_C1,Caulerpa,Green,Deep Sea Water,2.5,Low Flow,Tank 2,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+8,PF_L_T2_C2,Caulerpa,Green,Deep Sea Water,2.5,Low Flow,Tank 2,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+107,PF_L_T2_WA,Caulerpa,Green,Deep Sea Water,2.5,Low Flow,Tank 2,12hr Pulsed Flume,filter,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling water,Ocean Era Nov22,Sean and Nic
+73,PF_M_T1_C1,Caulerpa,Green,Deep Sea Water,2.5,Medium Flow,Tank 1,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+16,PF_M_T1_C2,Caulerpa,Green,Deep Sea Water,2.5,Medium Flow,Tank 1,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+136,PF_M_T1_WA,Caulerpa,Green,Deep Sea Water,2.5,Medium Flow,Tank 1,12hr Pulsed Flume,filter,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling water,Ocean Era Nov22,Sean and Nic
+46,PF_M_T2_C1,Caulerpa,Green,Deep Sea Water,2.5,Medium Flow,Tank 2,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+22,PF_M_T2_C2,Caulerpa,Green,Deep Sea Water,2.5,Medium Flow,Tank 2,12hr Pulsed Flume,limu,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+111,PF_M_T2_WA,Caulerpa,Green,Deep Sea Water,2.5,Medium Flow,Tank 2,12hr Pulsed Flume,filter,Caulerpa in nightly pulsed deep sea water flume at different flow rates,Nov sampling water,Ocean Era Nov22,Sean and Nic
+84,S1_ULVA,Ulva,Green,Unknown,NA,NA,NA,NA,limu,Samples from freezer at ocean era,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+93,S2_ULVA,Ulva,Green,Unknown,NA,NA,NA,NA,limu,Samples from freezer at ocean era,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+95,S3_HALYM,Halymenia,Red,Unknown,NA,NA,NA,NA,limu,Samples from freezer at ocean era,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+96,S5_CAULERPA,Caulerpa,Green,Unknown,NA,NA,NA,NA,limu,Samples from freezer at ocean era,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+87,S6_HALYM,Halymenia,Red,Unknown,NA,NA,NA,NA,limu,Samples from freezer at ocean era,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+53,SD_A_T1_C1,Aghardiella,Red,Deep Sea Water,20,NA,Tank 1,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+34,SD_A_T1_C2,Aghardiella,Red,Deep Sea Water,20,NA,Tank 1,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+21,SD_A_T1_C3,Aghardiella,Red,Deep Sea Water,20,NA,Tank 1,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+132,SD_A_T1_WA,Aghardiella water,Red,Deep Sea Water,20,NA,Tank 1,Stocking Density,filter,Aghardiella grown with deep sea water,Nov sampling water,Ocean Era Nov22,Sean and Nic
+45,SD_A_T2_C1,Aghardiella,Red,Deep Sea Water,20,NA,Tank 2,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+5,SD_A_T2_C2,Aghardiella,Red,Deep Sea Water,20,NA,Tank 2,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+60,SD_A_T2_C3,Aghardiella,Red,Deep Sea Water,20,NA,Tank 2,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+109,SD_A_T2_WA,Aghardiella water,Red,Deep Sea Water,20,NA,Tank 2,Stocking Density,filter,Aghardiella grown with deep sea water,Nov sampling water,Ocean Era Nov22,Sean and Nic
+76,SD_H_T1_C1,Halymenia,Red,Deep Sea Water,20,NA,Tank 1,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+68,SD_H_T1_C2,Halymenia,Red,Deep Sea Water,20,NA,Tank 1,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+15,SD_H_T1_C3,Halymenia,Red,Deep Sea Water,20,NA,Tank 1,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+137,SD_H_T1_WA,Halymenia water,Red,Deep Sea Water,20,NA,Tank 1,Stocking Density,filter,Aghardiella grown with deep sea water,Nov sampling water,Ocean Era Nov22,Sean and Nic
+37,SD_H_T2_4,Halymenia,Red,Deep Sea Water,20,NA,Tank 2,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+29,SD_H_T2_C2,Halymenia,Red,Deep Sea Water,20,NA,Tank 2,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+7,SD_H_T2_C3,Halymenia,Red,Deep Sea Water,20,NA,Tank 2,Stocking Density,limu,Aghardiella grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+102,SD_H_T2_WA,Halymenia water,Red,Deep Sea Water,20,NA,Tank 2,Stocking Density,filter,Aghardiella grown with deep sea water,Nov sampling water,Ocean Era Nov22,Sean and Nic
+94,SE1_ULVA,Ulva,Green,Unknown,NA,NA,NA,NA,limu,Samples from freezer at Ocean Era,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+90,SE2_HALYM,Halymenia,Red,Unknown,NA,NA,NA,NA,limu,Samples from freezer at Ocean Era,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+92,SE3_CAUL,Caulerpa,Green,Unknown,NA,NA,NA,NA,limu,Samples from freezer at Ocean Era,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+88,SE4_CAUL,Caulerpa,Green,Unknown,NA,NA,NA,NA,limu,Samples from freezer at Ocean Era,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+86,SE5_CAULERPA,Caulerpa,Green,Unknown,NA,NA,NA,NA,limu,Samples from freezer at Ocean Era,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+91,SE5_HALYM,Halymenia,Red,Unknown,NA,NA,NA,NA,limu,Samples from freezer at Ocean Era,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+89,SE6_HALYM,Halymenia,Red,Unknown,NA,NA,NA,NA,limu,Samples from freezer at Ocean Era,Collected by Ocean Era,Ocean Era Freezer,Sean and Nic
+131,SSW1_SD,Source water,NA,Surface Sea Water,NA,NA,NA,Stocking Density,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
+112,SSW2,NA,NA,Surface Sea Water,NA,NA,NA,Source Water,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
+110,SSW3_EC,Source water,NA,Surface Sea Water,NA,NA,NA,Effluent Commercialization,filter,Reference sample from water source,Nov sampling water,Ocean Era Nov22,Sean and Nic
+50,UB_C1,Ulva,Green,Deep Sea Water,10,NA,Tank 1,Ulva Blue,limu,Ulva grownt with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+42,UB_C2,Ulva,Green,Deep Sea Water,10,NA,Tank 1,Ulva Blue,limu,Ulva grownt with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+57,UB_C3,Ulva,Green,Deep Sea Water,10,NA,Tank 1,Ulva Blue,limu,Ulva grownt with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+101,UB_W,Ulva water,Green,Deep Sea Water,10,NA,Tank 1,Ulva Blue,filter,Ulva grownt with deep sea water,Nov sampling water,Ocean Era Nov22,Sean and Nic
+24,UL_12WILD_SSW_10MLF12_1,Ulva,Green,Artificial,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+18,UL_12WILD_SSW1_10ML_F12_3,Ulva,Green,Artificial,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+2,UL_12wild_sswk10ml3_2,Ulva,Green,Artificial,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+32,UL_wild_pool_1,Ulva,Green,Artificial,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+48,UL_WILD_POOS_3,Ulva,Green,Artificial,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+72,UL_WILDPOOL_2,Ulva,Green,Artificial,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+10,UO_VNN_SSW_F2A_1,Ulva,Green,Artificial,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+71,UO_VON_1_SSW_F2A_3,Ulva,Green,Artificial,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+40,UO_VON1_SJW_F2A_2,Ulva,Green,Artificial,NA,NA,NA,Species ID,limu,Requested help with species ID,Limu ID Nov sampling trip,Ocean Era Nov22,Sean and Nic
+25,UT_C1,Ulva,Green,Deep Sea Water,10,NA,NA,Ulva Trough,limu,Ulva grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+11,UT_C2,Ulva,Green,Deep Sea Water,10,NA,NA,Ulva Trough,limu,Ulva grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+19,UT_C3,Ulva,Green,Deep Sea Water,10,NA,NA,Ulva Trough,limu,Ulva grown with deep sea water,Nov sampling trip,Ocean Era Nov22,Sean and Nic
+114,UT_WA,Ulva water,Green,Deep Sea Water,10,NA,NA,Ulva Trough,filter,Ulva grown with deep sea water,Nov sampling water,Ocean Era Nov22,Sean and Nic

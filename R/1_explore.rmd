@@ -17,12 +17,15 @@ date: '`r Sys.Date()`'
 Purpose: Broad strokes exploration of the 16S library ASV data
 
 Projects:
+
 - Ocean Era Limu Microbiome - samples collected by Sean/Craig/Nic on Big Island in Nov 2022
+- Ocean Era Freezer - samples collected by Ocean Era at an earlier date and stored in the freezer on site
 - Coral Samples - Shannon/Wesley Porites and Montipora
 - JP-5 Waimano Groundwater spike - Pilot project run in early 2023
 - Poop - Nic's septic/cesspool pilot samples taken in late 2022
 
 Sample Types:
+
 - Limu Tissue Samples - amplified with chloroplast blockers (pPNA)
 - Limu Water 0.2 µm Filters - from aquaculture tanks and source waters (e.g. fish effluent, deep sea water, surface water)
 
@@ -38,6 +41,7 @@ library(data.table)
 library(DT)
 library(vegan)
 library(ggplot2)
+library(ComplexHeatmap)
 
 theme_set(theme_minimal())
 options(
@@ -66,13 +70,64 @@ options(
     '#000000'
   )
 )
+
+
+
+color_pallete = c(
+  
+  # type
+  "filter" = "steelblue",
+  "limu" = "burlywood",
+  
+  # water types
+  "Cage Effluent" = "khaki",
+  "Fish Effluent" = "gold2",
+  "Effluent Source Water" = "gold4",
+  
+  "Surface Sea Water" = "powderblue" ,
+  "Deep Sea Water" = "blue",
+  "Deep Sea Source Water" = "blue4",
+  "Artificial" = "orange",
+  "NA" = "gray",
+  
+  # genus
+  "Caulerpa" = "green",
+  "Caulerpa water" = "green",
+  
+  "Ulva" = "green4",
+  "Ulva water" = "green4",
+  
+  "Bryopsis" = "olivedrab",
+  
+  "Gracilaria" = "red4",
+  "Gracilaria water" = "red4",
+  
+  "Grateloupia" = "lightpink",
+  
+  "Aghardiella" = "violet",
+  "Aghardiella water",
+  
+  "Halymenia" = "red",
+  "Halymenia water" = "red",
+  
+  
+  "Dasya" = "coral",
+  "Source water" = "gray",
+  "NA" = "gray",
+  
+  # phylum
+  "Red" = "brown1",
+  "Green" = "yellowgreen"
+)
+
+
 ```
 
 
 ```{r}
 # file locations
 sample_file = "../data/sample/Sample_Key_OceanEraLimu-Poop-JP5.csv"
-otu_file= "../data/sequencing/16S/16S-pipeline_outputs/Results/main/details/abundance_table_100.shared"
+otu_file= "../data/sequencing/16S/16S-pipeline_outputs/Results/main/details/all_postprocessing_100.relabund"
 tax_file = "../data/sequencing/16S/16S-pipeline_outputs/Results/main/details/annotations_100.taxonomy"
 unifrac_file = "../data/sequencing/16S/16S-pipeline_outputs/Results/postprocessing/unifrac/unifrac_weighted_100.csv"
 
@@ -96,6 +151,15 @@ datatable(sample_sheet[ ,.(seqID,
                            contact)],
           options = list(pageLength = 10))
 
+# separate out ocean era samples that seqd successfully
+oce_era = sample_sheet[project == "Ocean Era Nov22" & seqID %in% all_otu$Group,]
+
+# make a long transposed (OTUs as rows) otu table for ocean era samples for use with heatmaps
+oce_otu = transpose(all_otu[Group %in% oce_era$seqID],
+                    keep.names = "OTU",
+                    make.names = "Group")
+
+oce_otu = oce_otu[rowSums(oce_otu[ , .SD, .SDcols = !"OTU"]) > 0, ]
 
 
 ```
@@ -136,9 +200,15 @@ unifrac= as.matrix(unifrac)
 
 ```
 
-## Plots
+# Ordinations
 
-Make some ordinations, heatmaps, etc.
+Plots to vizualize broad categorical trends in the data. 
+
+Main questions:
+
+- Does water source (Fish Effluent, Deep Sea Water) alter microbes on limu and in tank water?
+- Do different species produce distinct microbial communities on limu and in tank water?
+
 
 
 ```{r}
@@ -146,7 +216,7 @@ Make some ordinations, heatmaps, etc.
 ord_samples = function(samps){
   samps = samps[samps %in% rownames(unifrac)]
   dist_mat = unifrac[samps,samps]
-  ord = metaMDS(comm = as.dist(dist_mat))
+  capture.output(ord <- metaMDS(comm = as.dist(dist_mat)))
   out = list(points = as.data.table(ord$points, keep.rownames = "seqID"),
              stress = round(ord$stress, 3))
   return(out) 
@@ -156,44 +226,73 @@ ord_samples = function(samps){
 plot_ord = function(ord_out, p_title= NULL, color_var = NULL, shape_var = NULL){
  points = ord_out$points
  ord_meta = merge(points, sample_sheet, by = "seqID")
-  
+ 
+ if(is.null(color_var)){
+   pal = "gray30"
+ }else{
+   pal = color_pallete[unique(sample_sheet[[color_var]])]
+ }
+ 
  ggplot(ord_meta, aes_string(x = "MDS1",
                              y = "MDS2",
                              color = color_var,
                              shape = shape_var))+
-   geom_point(size = 3)+
+   geom_point(size = 3, alpha = 0.7)+
+   scale_color_manual(values = pal)+
    labs(title = p_title, 
         caption = paste("Stress =", ord_out$stress))
 }
 ```
 
 
-### By Project
+### Library Overview
 
-```{r}
+First, check that other projects in the sequencing library are distinct from the limu samples.
+
+A handful of samples from jet fuel spiked water (JP5 Spike) and septic systems (Poop) were included on this run.
+
+Based on the ordination, the other projects are distinct from the limu project. 
+
+```{r, message=FALSE}
 all_ord = ord_samples(sample_sheet[ , seqID])
 
 plot_ord(all_ord,
          p_title = "All Samples - Unifrac",
-         color_var = "project",
-         shape_var = "type")
+         shape_var = "project")
          
 
 ```
+## Ocean era samples
 
+### Limu and Water 
+
+These are two NMDS ordination plots showing all samples collected at Ocean Era.
+
+Plot 1 highlights variation in water and limu microbiomes driven by limu genus.
+
+Plot 2 highlights variation by in water and limu microbiomes driven by nutrient source water. 
+
+
+Interpretation: 
+
+Nutrient source water (deep water, fish effluent) doesn't seem to be a strong driver of microbial communities. This is true for both water in the tanks and the actual limu tissues. 
 
 ```{r}
 
-limu_ord = ord_samples(sample_sheet[ project == "Ocean Era Nov22" , seqID])
+oce_ord = ord_samples(oce_era[,seqID])
 
-plot_ord(limu_ord,
+plot_ord(oce_ord,
+         p_title = "All Samples - Unifrac",
+         color_var = "type")
+
+plot_ord(oce_ord,
          p_title = "All Samples - Unifrac",
          color_var = "genus",
          shape_var = "type")
          
 
     
-plot_ord(limu_ord,
+plot_ord(oce_ord,
          p_title = "All Samples - Unifrac",
          color_var = "nutrient_source",
          shape_var = "type")
@@ -202,18 +301,94 @@ plot_ord(limu_ord,
 
 
 ```
-### Water Samples
+
+### Water samples
+
+Plot 1: Variation in water microbes highlighting limu genus
+Plot 2: Variation in water microbes highlighting water source
+Plot 3: Variation in water microbes, focus on fish effluent
+
+Interpretation: 
+
+For water samples, the genus of limu present in the tanks has a weak effect (Plot 1).
+
+A much stronger gradient of variation occurs in a mostly vertical/diagonal direction that is bookeneded by two types of source water: Effluent Source Water and Surface Sea Water. 
+
+Across all tanks, surface seq water is the main component of water into the system. Effluent source water and and deep source water were added in at a smaller percentage to provide nutrients. 
+
+Many of the tanks where deep sea water was added look very similar to the surface sea water source. Some tanks where deep sea water was added show a microbial shift, but the community does not shift towards the deep sea water source community. Possibly this shift is due to other factors or purely due to nutrient input. In other words, I don't think this shift is from direct input of deep water microbes, which would be unsuited to the tank environment. 
+
+Perhaps the more interesting gradient of variation, in terms of human health and marketability of the product, is the shift in microbial community where water fish effluent was added. Fish effluent was from either Kanpachi or Nenue. It looks like Nenue effluent is microbially more different from surface water than Kanpachi effluent.
+
+Fish effluent water sampling for this project focused on three tank trials:
+
+ - CT = Caulerpa Trough (variable flow rates)
+ - GE = Gracilaria Effluent (variable effluent concentrations)
+ - EC = Effluent Commercialization (
 
 ```{r}
-limu_ord = ord_samples(sample_sheet[ type == "filter" , seqID])
+water_ord = ord_samples(oce_era[ type == "filter" , seqID])
 
-plot_ord(limu_ord,
-         p_title = "Water Samples - Unifrac",
-         color_var = "genus",
-         shape_var = "nutrient_source")
-         
+# Plot 1
+plot_ord(water_ord,
+         p_title = "Water Samples - Genus",
+         color_var = "genus")
+
+# Plot 2
+plot_ord(water_ord,
+         p_title = "Water Samples - Source",
+         color_var = "nutrient_source")
+
+# Plot 3
+eff_ord = water_ord = ord_samples(oce_era[ type == "filter" &
+                                             nutrient_source %in% c("Surface Sea Water",
+                                                                    "Fish Effluent",
+                                                                    "Effluent Source Water"),
+                                           seqID])
+plot_ord(eff_ord,
+         p_title = "Water Samples - Effluent",
+         color_var = "nutrient_source")+
+        geom_text(aes(label = sampleID), size = 2, alpha = 0.7, hjust = 1.2)
+
+plot_ord(eff_ord,
+         p_title = "Water Samples - Effluent",
+         color_var = "genus")+
+        geom_text(aes(label = sampleID), size = 2, alpha = 0.7, hjust = 1.2)
 ```
+
+### Effluent Trial
+
+The Gracillaria effluent (GE) trial varied the percentage of effluent being fed to each tank of Gracillaria. Do we see evidence that more fish effluent produces a larger shift in the microbial community? 
+
+It does look like there is separation between surface sea water and Nenue effluent on the X-axis. The lowest effluent concentration tanks are on the right side of the graph, while higher concentrations tend to be on the left side. However, there is substantial variation on the Y-axis, indicating that the community may be shifting for reasons unrelated to direct input of microbes from the fish effluent. Y-axis variation does not appear to track the concentration of effluent input into the system. 
+
+
+```{r}
+GE_ord = water_ord = ord_samples(oce_era[ type == "filter" &
+                                             nutrient_source %in% c("Surface Sea Water",
+                                                                    "Fish Effluent",
+                                                                    "Effluent Source Water")&
+                                             experiment %in% c("Source Water",
+                                                               "Gracillaria Effluent"),
+                                           seqID])
+plot_ord(GE_ord,
+         p_title = "Water Samples - Gracillaria Effluent",
+         color_var = "nutrient_source")+
+        geom_text(aes(label = sampleID),
+                  size = 2,
+                  alpha = 0.7,
+                  hjust = 1.2)
+```
+
+
+
+
 ### Limu Samples
+
+How do microbes attached to the surface of limu vary?
+
+Overall, microbes associated with the physical surface and tissues of limu closely tracks genus and phylum level taxonomy. The effect of water inputs appears to be minimal minimal. 
+
 
 ```{r}
 limu_ord = ord_samples(sample_sheet[ type == "limu" , seqID])
@@ -222,6 +397,12 @@ plot_ord(limu_ord,
          p_title = "Limu Samples - Unifrac",
          color_var = "genus",
          shape_var = "nutrient_source")
+
+plot_ord(limu_ord,
+         p_title = "Limu Samples - Unifrac",
+         color_var = "phylum",
+         shape_var = "nutrient_source")
+
          
 ```
 
@@ -230,55 +411,106 @@ plot_ord(limu_ord,
 
 ```{r}
 # function to sum by family
-sum_by_tax = function(otus,
+prep_ht_mat = function(otus,
                       tax_table,
                       tax_level = "family",
-                      cutoff = 40){
-  
+                      cutoff = 40,
+                      min_sam = 2,
+                      scale_vals = F){
+  if(tax_level == "OTU"){
+    otu_sum = otus
+    
+  }else{
   otu_key = merge(otus,
                     tax_table[, .SD, .SDcols = c(tax_level, "OTU")],
                     by = "OTU",
                     all.x = T)
+  
   otu_key[, OTU := NULL]
   
   # sum by tax level
   otu_sum = otu_key[, lapply(.SD, sum), by = tax_level]
+  }
 
-  # order by most abundant taxa
+  # order by most abundant taxa and subset to top N
   otu_sum[ , tax_sums := rowSums(otu_sum[ , .SD, .SDcols = !tax_level])]
   otu_sum = otu_sum[tax_sums > 0]
   otu_sum = otu_sum[order(tax_sums, decreasing = T)]
   otu_sum[ , tax_sums := NULL]
+  otu_sum = otu_sum[1:cutoff,]
   
-  return(otu_sum)
+  # transform data.table to matrix
+  otu_mat = as.matrix(otu_sum[, .SD,
+                              .SDcols = !tax_level],
+                      rownames.value = otu_sum[[tax_level]])
+  
+  # drop taxa that don't meet min sample count
+  keep_tax = apply(otu_mat, 1, function(x)
+    length(x[x > 0]) > min_sam)
+  otu_mat = otu_mat[keep_tax, ]
+
+  # optionally z-score a.k.a. scale values
+  if (isTRUE(scale_vals)) {
+    otu_mat = t(scale(t(otu_mat)))
+  }
+  
+  return(otu_mat)
 }
 
 
 
-# function to generate heatmap
-make_heatmap = function(otu_dt,
-                        id_col,
-                        col_labs,
-                        row_labs = NULL,
-                        scale_vals = F,
-                        min_sam = 2){
-  
- # transform to matrix
- otu_mat = as.matrix(otu_dt[ , .SD, .SDcols = !id_col])
- otu_mat = otu_mat[rowSums(otu_mat) > 0,]
- 
- # count taxon occurrence 
- keep_tax = apply(otu_mat, 1, function(x) length(x[x>0]) > min_sam)
- otu_mat = otu_mat[keep_tax,]
- row_labs = row_labs[keep_tax]
- 
- if(isTRUE(scale_vals)){
-   otu_mat = t(scale(t(otu_mat)))
- }
- 
- Heatmap(matrix = otu_mat,
-         column_labels = col_labs,
-         row_labels = row_labs)
-}
 ```
+
+Heatmap of all limu samples (summed by bacterial family, top 40)
+
+```{r}
+
+limu_otu = oce_otu[ , .SD, .SDcols = c("OTU", oce_era[type == "limu", seqID])]
+
+# get family summed matrix
+limu_mat = sum_by_tax(otu = limu_otu,
+           tax_table = tax,
+           tax_level = "family",
+           cutoff = 40,
+           scale_vals = T)
+
+# make heatmap annotation
+genera = oce_era[match(colnames(limu_mat), oce_era$seqID), genus]
+nutrients = oce_era[match(colnames(limu_mat), oce_era$seqID), nutrient_source]
+
+ha = HeatmapAnnotation(genus = genera,
+                       nutrient = nutrients,
+                       col = list(genus = color_pallete[unique(genera)],
+                                  type = color_pallete[unique(nutrients)]))
+ht = Heatmap(matrix = limu_mat,
+             bottom_annotation = ha)
+ht
+
+
+```
+
+Hetmap of all water samples (summed by bacterial family, top 40)
+
+```{r}
+water_otu = oce_otu[ , .SD, .SDcols = c("OTU", oce_era[type == "filter", seqID])]
+
+# get family summed matrix
+water_mat = sum_by_tax(otu = water_otu,
+           tax_table = tax,
+           tax_level = "family",
+           cutoff = 40,
+           scale_vals = T)
+
+# make heatmap annotation
+nutrients = oce_era[match(colnames(water_mat), oce_era$seqID), nutrient_source]
+
+ha = HeatmapAnnotation(
+                       nutrient = nutrients,
+                       col = list(nutrient = color_pallete[unique(nutrients)]))
+ht = Heatmap(matrix = water_mat,
+             bottom_annotation = ha)
+ht
+
+```
+
 
