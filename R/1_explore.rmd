@@ -124,6 +124,7 @@ color_pallete = c(
 ```
 
 
+
 ```{r}
 # file locations
 sample_file = "../data/sample/Sample_Key_OceanEraLimu-Poop-JP5.csv"
@@ -163,6 +164,18 @@ oce_otu = oce_otu[rowSums(oce_otu[ , .SD, .SDcols = !"OTU"]) > 0, ]
 
 
 ```
+
+Here is a brief summary of the samples collected from various trials being run at Ocean Era along with source water for the tanks and limu collected from the fish cages.
+
+```{r}
+# summarize each experiment
+
+oce_summary = oce_era[ , .("Sample Count" = .N), by = .( experiment, description, type)]
+
+datatable(oce_summary,
+          options = list(pageLength = 10))
+```
+
 
 
 ```{r}
@@ -360,7 +373,7 @@ plot_ord(eff_ord,
 
 The Gracillaria effluent (GE) trial varied the percentage of effluent being fed to each tank of Gracillaria. Do we see evidence that more fish effluent produces a larger shift in the microbial community? 
 
-It does look like there is separation between surface sea water and Nenue effluent on the X-axis. The lowest effluent concentration tanks are on the right side of the graph, while higher concentrations tend to be on the left side. However, there is substantial variation on the Y-axis, indicating that the community may be shifting for reasons unrelated to direct input of microbes from the fish effluent. Y-axis variation does not appear to track the concentration of effluent input into the system. 
+It does look like there is separation between surface sea water and Nenue effluent on the X-axis. The lowest effluent concentration tanks are on the right side of the graph, while higher concentrations tend to be on the left side. However, there is substantial variation on the Y-axis, indicating that the community may be shifting for reasons unrelated to direct input of microbes from the fish effluent. Y-axis variation does not appear to track the concentration of effluent input into the system. It's hard to read, but the effluent concentration is in the point labels (GE_[Concentration]_[Tank #]_WA). I plan to recolor points by effluent concentration.
 
 
 ```{r}
@@ -468,7 +481,7 @@ Heatmap of all limu samples (summed by bacterial family, top 40)
 limu_otu = oce_otu[ , .SD, .SDcols = c("OTU", oce_era[type == "limu", seqID])]
 
 # get family summed matrix
-limu_mat = sum_by_tax(otu = limu_otu,
+limu_mat = prep_ht_mat(otu = limu_otu,
            tax_table = tax,
            tax_level = "family",
            cutoff = 40,
@@ -478,14 +491,30 @@ limu_mat = sum_by_tax(otu = limu_otu,
 genera = oce_era[match(colnames(limu_mat), oce_era$seqID), genus]
 nutrients = oce_era[match(colnames(limu_mat), oce_era$seqID), nutrient_source]
 
-ha = HeatmapAnnotation(genus = genera,
-                       nutrient = nutrients,
-                       col = list(genus = color_pallete[unique(genera)],
-                                  type = color_pallete[unique(nutrients)]))
-ht = Heatmap(matrix = limu_mat,
-             bottom_annotation = ha)
-ht
+ha = HeatmapAnnotation(
+  genus = genera,
+  nutrient = nutrients,
+  col = list(genus = color_pallete[unique(genera)],
+             nutrient = color_pallete[unique(nutrients)]),
+  show_annotation_name = F,
+  annotation_legend_param = list(
+    labels_gp = gpar(fontsize = 7),
+    title_gp = gpar(fontsize = 7)
+  )
+)
 
+ht = Heatmap(
+  matrix = limu_mat,
+  bottom_annotation = ha,
+  row_names_gp = gpar(fontsize = 8),
+  show_column_names = F,
+  heatmap_legend_param = list(
+    labels_gp = gpar(fontsize = 7),
+    title_gp = gpar(fontsize = 7),
+    title = "Scaled RA"
+  )
+)
+ht
 
 ```
 
@@ -495,7 +524,7 @@ Hetmap of all water samples (summed by bacterial family, top 40)
 water_otu = oce_otu[ , .SD, .SDcols = c("OTU", oce_era[type == "filter", seqID])]
 
 # get family summed matrix
-water_mat = sum_by_tax(otu = water_otu,
+water_mat = prep_ht_mat(otu = water_otu,
            tax_table = tax,
            tax_level = "family",
            cutoff = 40,
@@ -506,10 +535,20 @@ nutrients = oce_era[match(colnames(water_mat), oce_era$seqID), nutrient_source]
 
 ha = HeatmapAnnotation(
                        nutrient = nutrients,
-                       col = list(nutrient = color_pallete[unique(nutrients)]))
+                       col = list(nutrient = color_pallete[unique(nutrients)]),
+                       show_annotation_name = F,
+                       annotation_legend_param = list(labels_gp = gpar(fontsize = 7),
+                                        title_gp = gpar(fontsize = 7)))
 ht = Heatmap(matrix = water_mat,
-             bottom_annotation = ha)
-ht
+             bottom_annotation = ha,
+            row_names_gp = gpar(fontsize = 8),
+                show_column_names = F,
+            heatmap_legend_param = list(labels_gp = gpar(fontsize = 7),
+                                        title_gp = gpar(fontsize = 7),
+                                        title = "Scaled RA"
+                                        ))
+
+  ht
 
 ```
 
